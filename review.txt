@@ -1,0 +1,32 @@
+１．信号处理　signal()
+    *异步通信方式　--> 同步执行　异步执行
+
+２．信号量　　Semaphore()
+    acquire()  删除
+    release()　　增加
+    get_value()　　获取
+
+３．同步互斥机制：解决了多个进程或者线程对共享资源的争夺
+    Event  e.set  e.clear  e.wait
+    Lock   lock.acquire()  lock.release()
+
+４．什么是线程
+    threading
+        Thread()
+        t.start()
+        t.join()
+
+        t.name  t.getName t.setName  t.daemon  t.is_alive()
+
+５．自定义线程类
+    继承（Thread）
+    重写（run）
+
+６．线程通信
+    使用全局变量通信
+    线程的同步互斥
+
+
+７．python线程　　GIL
+    影响：同一时刻只能解释一个线程，造成python线程低
+    python线程：适用于高阻塞IO程序
